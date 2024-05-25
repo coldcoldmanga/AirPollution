@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPollution</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+        <div class="navbar">
+            <nav class="navbar-content">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">AQI</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main" id="main">
+                <div class="map-content">
+                    <!-- <center><h1 class="title">Air Pollution MY</h1></center> -->
+                    <div class="search">
+                        <label for="searchInput">Enter City:</label>
+                        <input type="text" placeholder="Enter the city you want" class="searchInput" id="searchInput">
+                        <button type="submit" class="searchBtn" onclick="updateAQI()">Search</button>
+                    </div>
+    
+                    <div  id="city-aqi-container" class=""></div>  
+    
+                    <div class="map" id="map"></div>
+                </div>
+
+                <div class="other">
+                    <h1>something</h1>
+                </div>
+        </div>
+
+
+
+        <div class="footer">
+            <footer>@2024</footer>
+        </div>
+    </div>
+</div>
+
+<script  type="text/javascript" src="widget.js"  charset="utf-8"></script>
+<script type="text/javascript" src="map.js"></script>
+<script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AsZWQwvHvUQDJ3Kji7UdRWYhc9rZjsfORkO_98hOYr4ghY4dSNENKkGtpS-abnz9' async defer></script>
+    
+</body>
+</html>
