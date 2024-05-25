@@ -24,34 +24,6 @@ function GetMap()
 
     }
 
-    function geocodeQuery(query) {
-        if (!searchManager) {
-            Microsoft.Maps.loadModule('Microsoft.Maps.Search', function () {
-                searchManager = new Microsoft.Maps.Search.SearchManager(map);
-                geocodeQuery(query);
-            });
-        } else {
-            var searchRequest = {
-                where: query,
-                callback: function (r) {
-                    if (r && r.results && r.results.length > 0) {
-                        var result = r.results[0];
-                        map.setView({ bounds: result.bestView });
-                        var pushpin = new Microsoft.Maps.Pushpin(result.location);
-                        map.entities.clear();
-                        map.entities.push(pushpin);
-                    } else {
-                        alert('No results found.');
-                    }
-                },
-                errorCallback: function (e) {
-                    alert("Geocoding error: " + e.message);
-                }
-            };
-            searchManager.geocode(searchRequest);
-        }
-    }
-
 // function geocodeQuery(query){
 //     if(!searchManager)
 //     {
