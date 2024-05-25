@@ -8,44 +8,65 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-<div class="container">
-    <div class="content">
-        <div class="navbar">
-            <nav class="navbar-content">
+<nav class="navbar">
+    <div class="navbar-container">
+            <div class="navbar-title">Air Pollution</div>
+            <div class="navbar-element">
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">AQI</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">What is AQI</a></li>
+                    <li><a href="#">Effect</a></li>
+                    <li><a href="#">Prevention</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Feedback</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        
+    </div>
+</nav>
 
-        <div class="main" id="main">
+        <header>
+            <div class="main" id="main">
                 <div class="map-content">
-                    <!-- <center><h1 class="title">Air Pollution MY</h1></center> -->
                     <div class="search">
                         <label for="searchInput">Enter City:</label>
-                        <input type="text" placeholder="Enter the city you want" class="searchInput" id="searchInput">
+                        <input type="text" placeholder="Enter the city you want" class="searchInput" id="searchInput" style="padding: 5px;">
                     </div>
     
-                    <div  id="city-aqi-container" class="city-aqi-container"></div>  
+                    <div class="city-aqi-container">
+                        <div class="aqi-result" id="city-aqi-container"></div>
+                    </div>  
     
                     <div class="map" id="map"></div>
                 </div>
 
-                <div class="other">
-                    <h1>something</h1>
-                </div>
         </div>
+        </header>
 
+        <!-- Content for What is AQI -->
+        <section>
+            <div class="container">
+                    <h1 style="margin-top: 10px;">What is AQI</h1>
 
+            </div>
+        </section>
+        
+        <!-- Content for Effect -->
+        <section>
+            <div class="container">
+                <h1 style="margin-top: 10px;">Effect of Air Pollution</h1>
+            </div>
+        </section>
 
-        <div class="footer">
-            <footer>@2024</footer>
-        </div>
-    </div>
-</div>
+        <!-- Content for Prevention -->
+        <section>
+            <div class="container">
+                <h1 style="margin-top: 10px;">Prevention</h1>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">©2024 Air Pollution MY</div>
+        </footer>
 
 <script  type="text/javascript" src="aqi.js"  charset="utf-8"></script>
 <script type="text/javascript" src="map.js"></script>
