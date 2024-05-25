@@ -1,18 +1,12 @@
 "use strict";
 
-// const searchInput = document.querySelector(".searchInput");
-// const searchBtn = document.querySelector(".searchBtn");
-
-// var map, searchManager;
-
-// searchBtn.addEventListener("click", () => {
-//     map.entities.clear();
-//     geocodeQuery(searchInput.value);
-// });
+//for geocoding
+var map;
+let searchManager;
 
 function GetMap()
     {
-        var  map  =  new  Microsoft.Maps.Map(document.getElementById('map'),  {  
+        map  =  new  Microsoft.Maps.Map(document.getElementById('map'),  {  
             center:  new  Microsoft.Maps.Location(4.2105, 101.9758),  
             zoom:  6,  
       });  
@@ -29,3 +23,61 @@ function GetMap()
       map.layers.insert(waqiTilelayer);
 
     }
+
+    function geocodeQuery(query) {
+        if (!searchManager) {
+            Microsoft.Maps.loadModule('Microsoft.Maps.Search', function () {
+                searchManager = new Microsoft.Maps.Search.SearchManager(map);
+                geocodeQuery(query);
+            });
+        } else {
+            var searchRequest = {
+                where: query,
+                callback: function (r) {
+                    if (r && r.results && r.results.length > 0) {
+                        var result = r.results[0];
+                        map.setView({ bounds: result.bestView });
+                        var pushpin = new Microsoft.Maps.Pushpin(result.location);
+                        map.entities.clear();
+                        map.entities.push(pushpin);
+                    } else {
+                        alert('No results found.');
+                    }
+                },
+                errorCallback: function (e) {
+                    alert("Geocoding error: " + e.message);
+                }
+            };
+            searchManager.geocode(searchRequest);
+        }
+    }
+
+// function geocodeQuery(query){
+//     if(!searchManager)
+//     {
+//         Microsoft.Maps.loadModule("Microsoft.Maps.Search", function(){
+//             searchManager = new Microsoft.Maps.Search.SearchManager(map);
+//             geocodeQuery(query);
+//         });
+//     }
+//     else
+//     {
+//         let searchRequest = {
+//             where: query,
+//             callback: function(r){
+//                 if(r && r.results && r.results.length > 0)
+//                     {
+//                         var pin = new Microsoft.Maps.PushPin(r.results[0].location);
+//                         map.entities.push(pin);
+
+//                         map.setView({bounds: r.results[0].bestView});
+//                     };
+//             },
+//             errorCallback: function(e)
+//             {
+//                 alert("No results found");
+//             }
+//         };
+//         searchManager.geocode(searchRequest);
+//     }
+// }
