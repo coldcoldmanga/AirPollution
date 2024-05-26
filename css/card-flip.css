@@ -1,0 +1,31 @@
+.flip{
+   transition: transform 1s;
+   transform-style: preserve-3d; 
+}
+
+.flip:hover{
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+.front, .back{
+    backface-visibility: hidden;
+}
+
+.front{
+    font-size: 2rem;
+}
+
+.back{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    position: absolute;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    top: 10%;
+    height: 100%;
+}
