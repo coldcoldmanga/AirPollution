@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/card-flip.css">
 </head>
 <body>
 <nav class="navbar">
@@ -14,19 +15,19 @@
             <div class="navbar-title">Air Pollution</div>
             <div class="navbar-element">
                 <ul>
-                    <li><a href="#">What is AQI</a></li>
-                    <li><a href="#">Effect</a></li>
-                    <li><a href="#">Prevention</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#Map" class="nav-link active">Map</a></li>
+                    <li><a href="#AQI" class="nav-link">What is AQI</a></li>
+                    <li><a href="#Cause" class="nav-link">Causes</a></li>
+                    <li><a href="#Effect" class="nav-link">Effect</a></li>
+                    <li><a href="#Solution" class="nav-link">Solution</a></li>
                 </ul>
             </div>
         
     </div>
 </nav>
 
-        <header>
-            <div class="main" id="main">
+        <section id="Map">
+            <div class="main">
                 <div class="map-content">
                     <div class="search">
                         <label for="searchInput">Enter City:</label>
@@ -41,10 +42,10 @@
                 </div>
 
         </div>
-        </header>
+    </section>
 
         <!-- Content for What is AQI -->
-        <section>
+        <section id="AQI">
             <div class="container">
                     <h1 style="margin-top: 10px;">What is AQI</h1>
                     <p class="text" style="margin-top: 20px;">The Air Quality Index (AQI) is a measurement of air pollutant concentrations in ambient air pollution and their associated health risks.</p>
@@ -189,22 +190,132 @@
             </div>
         </section>
         
-        <!-- Content for Effect -->
-        <section>
+        <!-- Content for Causes -->
+        <section id="Cause">
             <div class="container">
-                <h1 style="margin-top: 10px;">Effect of Air Pollution</h1>
+                <h1 style="margin-top: 10px;">Causes of Air Pollution in Malaysia</h1>
 
-                <div class="effect-content">
+                <div class="content">
                      
+                    <div class="row">
+                        <div class="card flip cause">
+                            <div class="card-header">
+
+                            </div>
+
+                            <div class="front">
+                                <div class="card-content">
+                                    <dv class="img">
+                                        <img src="img/industry.svg" alt="" srcset="" width="70%">
+                                    </dv>
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="card-content">
+                                    Industry includes pollution from facilities such as manufacturing factories, mines, and oil refineries as well as coal power plants and boilers for heat and power generation.
+                                </div>
+
+                            </div>
+
+                            <div class="card-footer front">
+                                Industries
+                            </div>
+                        </div>
+
+                        <div class="card flip cause">
+                            <div class="card-header">
+
+                            </div>
+
+                            <div class="front">
+                                <div class="card-content">
+                                    <dv class="img">
+                                        <img src="img/building.svg" alt="" srcset="" width="70%">
+                                    </dv>
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="card-content">
+                                    Development activities such as construction, industrial operations, and deforestation emit pollutants like particulate matter and gases, exacerbating air pollution.                                </div>
+
+                            </div>
+
+                            <div class="card-footer front">
+                                Development Activities
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="card flip cause">
+                            <div class="card-header">
+
+                            </div>
+
+                            <div class="front">
+                                <div class="card-content">
+                                    <dv class="img">
+                                        <img src="img/car.svg" alt="" srcset="" width="70%">
+                                    </dv>
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="card-content">
+                                    Air pollution from transport refers primarily to fuel combustion in motor vehicles, such as in cars, trucks, trains, planes, and ships. Transport emissions are a major contributor to elevated levels of fine particulate matter (PM2.5), ozone, and nitrogen dioxide (NO2).
+                                </div>
+
+                            </div>
+
+                            <div class="card-footer front">
+                                Transportation
+                            </div>
+                        </div>
+
+                        <div class="card flip cause">
+                            <div class="card-header">
+
+                            </div>
+
+                            <div class="front">
+                                <div class="card-content">
+                                    <dv class="img">
+                                        <img src="img/fire.svg" alt="" srcset="" width="70%">
+                                    </dv>
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="card-content">
+                                    The burning of plant matter emits large amounts of pollutants, as does burning other solid fuels like coal. Burning organic material emits particulate matter (PM), nitrogen oxides (NOx), carbon monoxide (CO), sulfur dioxide (SO2), lead, mercury, and other hazardous air pollutants (HAPs). These fires may occur organically, accidentally, or intentionally. </div>
+                            </div>
+
+                            <div class="card-footer front">
+                                Wild Fires and Open Burning
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
         </section>
 
-        <!-- Content for Prevention -->
-        <section>
+        <!-- Content for Effects -->
+        <section id="Effect">
             <div class="container">
-                <h1 style="margin-top: 10px;">Prevention</h1>
+                <h1 style="margin-top: 10px;">Effects of Air Pollution to Health</h1>
+            </div>
+        </section>
+
+        <!-- Content for Solutions -->
+        <section id="Solution">
+            <div class="container">
+                <h1 style="margin-top: 10px;">Solutions to Improve Air Quality</h1>
             </div>
         </section>
 
@@ -214,6 +325,7 @@
 
 <script  type="text/javascript" src="js/aqi.js"  charset="utf-8"></script>
 <script type="text/javascript" src="js/map.js"></script>
+<script src="js/scrollspy.js"></script>
 <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AsZWQwvHvUQDJ3Kji7UdRWYhc9rZjsfORkO_98hOYr4ghY4dSNENKkGtpS-abnz9' async defer></script>
     
 </body>
