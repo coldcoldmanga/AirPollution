@@ -8,7 +8,7 @@ searchInput.addEventListener("input", debounce(fetchAQI,500));
 async function fetchAQI() {
     const city = document.getElementById('searchInput').value;
     const token = '2545fed08b2dbc8e1d73068f9c6f034e0b9b9f36';
-    const url = `http://api.waqi.info/feed/${city}/?token=${token}`;
+    const url = `https://api.waqi.info/feed/${city}/?token=${token}`;
 
     if(city != '')
     {

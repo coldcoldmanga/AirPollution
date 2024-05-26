@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.card{
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.card-header{
+    display: flex;
+    justify-content: flex-start;
+    padding: 25px;
+    position: relative;
+    left: -25%;
+    width: 100%;
+}
+
+.aqi-tag{
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 1000;
+
+}
+
+.card-content{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 35px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card-footer{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 10%;
+    
+}
+
+.green{
+    background-color: #77E843;
+}
+
+.yellow{
+    background-color: #FFD233;
+}
+
+.orange{
+    background-color: #FF7533;
+}
+
+.red{
+    background-color: #FF3333;
+}
+
+.purple{
+    background-color: #E833FF;
+}
+
+.brown{
+    background-color: #B0762F;
+}

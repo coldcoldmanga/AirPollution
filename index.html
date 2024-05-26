@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AirPollution</title>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/card.css">
 </head>
 <body>
 <nav class="navbar">
@@ -46,6 +47,144 @@
         <section>
             <div class="container">
                     <h1 style="margin-top: 10px;">What is AQI</h1>
+                    <p class="text" style="margin-top: 20px;">The Air Quality Index (AQI) is a measurement of air pollutant concentrations in ambient air pollution and their associated health risks.</p>
+
+                    <div class="content">
+                        <div class="row">
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="aqi-tag green">
+                                        Healthy 0-50
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="img">
+                                        <img src="img/smile.svg" alt="" width="50%">
+                                    </div>
+
+                                    <div class="card-content-text">
+                                        Air Quality is considered satisfactory, and air pollution posses little or no risk.
+                                    </div>
+                                </div>
+
+                                <div class="card-footer green">
+                                
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="aqi-tag yellow">
+                                        Moderate 51-100
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="img">
+                                        <img src="img/pokerface.svg" alt="" width="50%">
+                                    </div>
+
+                                    <div class="card-content-text">
+                                        Sensitive individuals should avoid outdoor activity as they may experience respitory symptoms.
+                                    </div>
+                                </div>
+
+                                <div class="card-footer yellow">
+                                
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="aqi-tag orange">
+                                        Unhealthy for Sensitive Group 101-150
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="img">
+                                        <img src="img/sad.svg" alt="" width="50%">
+                                    </div>
+
+                                    <div class="card-content-text">
+                                        General public and sensitive individuals in particular are at risk to experience irritation and respitory problems.
+                                    </div>
+                                </div>
+
+                                <div class="card-footer orange">
+                                  
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="aqi-tag red">
+                                        Unhealthy 151-200
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="img">
+                                        <img src="img/surprised.svg" alt="" width="50%">
+                                    </div>
+
+                                    <div class="card-content-text">
+                                        Increased likehood of adverse effects and aggravation to the heart and lungs among general public.
+                                    </div>
+                                </div>
+
+                                <div class="card-footer red">
+                                  
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="aqi-tag purple">
+                                        Very Unhealthy 201-300
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="img">
+                                        <img src="img/angry.svg" alt="" width="50%">
+                                    </div>
+
+                                    <div class="card-content-text">
+                                        General public will be noticeably affected. Sensitive groups should restrict outdoor activities.
+                                    </div>
+                                </div>
+
+                                <div class="card-footer purple">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="aqi-tag brown">
+                                        Harzadous 300+
+                                    </div>
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="img">
+                                        <img src="img/skeleton.svg" alt="" width="50%">
+                                    </div>
+
+                                    <div class="card-content-text">
+                                        General public at high risk of experiencing strong irritations and advere health effects. Should avoid outdoor activities.
+                                    </div>
+                                </div>
+
+                                <div class="card-footer brown">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
 
             </div>
         </section>
@@ -54,6 +193,11 @@
         <section>
             <div class="container">
                 <h1 style="margin-top: 10px;">Effect of Air Pollution</h1>
+
+                <div class="effect-content">
+                     
+                </div>
+
             </div>
         </section>
 
@@ -68,8 +212,8 @@
             <div class="footer">©2024 Air Pollution MY</div>
         </footer>
 
-<script  type="text/javascript" src="aqi.js"  charset="utf-8"></script>
-<script type="text/javascript" src="map.js"></script>
+<script  type="text/javascript" src="js/aqi.js"  charset="utf-8"></script>
+<script type="text/javascript" src="js/map.js"></script>
 <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AsZWQwvHvUQDJ3Kji7UdRWYhc9rZjsfORkO_98hOYr4ghY4dSNENKkGtpS-abnz9' async defer></script>
     
 </body>
