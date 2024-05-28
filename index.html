@@ -12,7 +12,7 @@
 <body>
 <nav class="navbar">
     <div class="navbar-container">
-            <div class="navbar-title">Air Pollution</div>
+            <div class="navbar-title">Air Pollution<span class="navbar-logo"><img src="img/malaysia.svg" alt="" width="15%"></span></div>
             <div class="navbar-element">
                 <ul>
                     <li><a href="#Map" class="nav-link active">Map</a></li>
@@ -35,7 +35,9 @@
                     </div>
     
                     <div class="city-aqi-container">
-                        <div class="aqi-result" id="city-aqi-container"></div>
+                        <div class="aqi-result" id="city-aqi-container">
+                            
+                        </div>
                     </div>  
     
                     <div class="map" id="map"></div>
@@ -47,7 +49,7 @@
         <!-- Content for What is AQI -->
         <section id="AQI">
             <div class="container">
-                    <h1 style="margin-top: 10px;">What is AQI</h1>
+                    <h1 class="title">What is AQI</h1>
                     <p class="text" style="margin-top: 20px;">The Air Quality Index (AQI) is a measurement of air pollutant concentrations in ambient air pollution and their associated health risks.</p>
 
                     <div class="content">
@@ -193,7 +195,7 @@
         <!-- Content for Causes -->
         <section id="Cause">
             <div class="container">
-                <h1 style="margin-top: 10px;">Causes of Air Pollution in Malaysia</h1>
+                <h1 class="title">Causes of Air Pollution in Malaysia</h1>
 
                 <div class="content">
                      
@@ -282,9 +284,9 @@
 
                             <div class="front">
                                 <div class="card-content">
-                                    <dv class="img">
-                                        <img src="img/fire.svg" alt="" srcset="" width="70%">
-                                    </dv>
+                                    <div class="img">
+                                        <img src="img/fire.svg" alt="" srcset="" width="70%" style="color: black;">
+                                    </div>
                                 </div>
                             </div>
 
@@ -308,21 +310,116 @@
         <!-- Content for Effects -->
         <section id="Effect">
             <div class="container">
-                <h1 style="margin-top: 10px;">Effects of Air Pollution to Health</h1>
+                <h1 class="title">Effects of Air Pollution to Health</h1>
+
+                <div class="content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="th-1">Ground-level Ozone</th>
+                                <th colspan="2" class="th-1">Particulate Matter(PM) and Wildire Smoke</th>
+                            </tr>
+
+                            <tr>
+                                <th  class="th-2"></th>
+                                <th class="th-2">Short Term</th>
+                                <th class="th-2">Long Term</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><ul>
+                                    <li>Reduced lung function</li>
+                                    <li>Aggravated asthma</li>
+                                    <li>Throat irritation and cough</li>
+                                    <li>Chest pain and shortness of breath</li>
+                                    <li>Inflammation of lung tissue</li>
+                                    <li>Higher susceptibility to respiratory infection</li>
+                                </ul></td>
+                                <td><ul>
+                                    <li>
+                                        Irregular heartbeats
+                                    </li>
+                                    <li>Chest pain</li>
+                                    <li>Coughing</li>
+                                    <li>Irritation of the eye, nose, and throat</li>
+                                    <li>Aggravated asthma</li>
+                                    <li>Decreased lung function</li>
+                                </ul></td>
+                                <td><ul>
+                                    <li>Lung tissue damage</li>
+                                    <li>Cancer</li>
+                                    <li>Asthma, bronchitis, emphysema</li>
+                                    <li>Early death</li>
+                                    </ul>
+                                </td>
+                            </tr>
+    
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </section>
 
         <!-- Content for Solutions -->
         <section id="Solution">
             <div class="container">
-                <h1 style="margin-top: 10px;">Solutions to Improve Air Quality</h1>
+                <h1 class="title">Solutions to Improve Air Quality</h1>
+
+                <div class="solution-content">
+                    <div class="measure1">
+                        <div class="picture1">
+
+                        </div>
+                        <div class="solution1">
+                            <div class="solution-header">
+                                Promote the Use of Public Transportation and Carpooling
+                            </div>
+                            <div class="solution-text">
+                                <p>Encouraging the use of public transportation and carpooling can significantly reduce the number of vehicles on the road, which in turn lowers emissions from cars and trucks. Public transportation systems, such as buses, trains, and subways, are designed to move large numbers of people efficiently, reducing the overall carbon footprint per passenger. Carpooling, or ride-sharing, is another effective strategy where individuals share a ride to a common destination. This not only cuts down on the number of vehicles but also reduces traffic congestion, leading to less idling and lower emissions. Governments and organizations can support this measure by investing in robust public transit systems, creating carpool lanes, and offering incentives for those who choose to carpool or use public transport.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="measure2">
+                        <div class="solution2">
+                            <div class="solution-header-2">
+                                Promote Renewable Energy Sources
+                            </div>
+
+                            <div class="solution-text">
+                                Transitioning to renewable energy sources such as solar, wind, hydro, and geothermal can drastically reduce air pollution. Unlike fossil fuels, renewable energy sources do not emit harmful pollutants or greenhouse gases during energy production. By investing in and promoting the use of clean energy technologies, governments and organizations can decrease reliance on coal, oil, and natural gas. This can be achieved through various incentives like subsidies for renewable energy projects, tax credits for households and businesses that install solar panels or wind turbines, and implementing policies that encourage the development of green energy infrastructure. Additionally, educating the public about the benefits of renewable energy can drive consumer demand and further support the shift towards a cleaner energy future.
+                            </div>
+                        </div>
+                        <div class="picture2">
+                            
+                        </div>
+                    </div>
+
+                    <div class="measure3">
+                        <div class="picture3">
+
+                        </div>
+                        <div class="solution3">
+                            <div class="solution-header">
+                                Implement and Enforce Stricter Emission Regulations
+                            </div>
+
+                            <div class="solution-text">
+                                Implementing and enforcing stricter emission regulations for industries, vehicles, and power plants is crucial in controlling the amount of pollutants released into the air. These regulations can include setting limits on the amount of harmful gases and particulate matter that can be emitted, mandating the use of cleaner technologies, and requiring regular maintenance and inspection of emission control systems. Governments can also incentivize companies to adopt greener practices through subsidies, tax breaks, or grants for those who invest in renewable energy sources or upgrade to cleaner technologies. By ensuring compliance through regular monitoring and imposing penalties for violations, these regulations can significantly reduce air pollution levels and improve air quality.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <footer>
             <div class="footer">©2024 Air Pollution MY</div>
         </footer>
-
+    
 <script  type="text/javascript" src="js/aqi.js"  charset="utf-8"></script>
 <script type="text/javascript" src="js/map.js"></script>
 <script src="js/scrollspy.js"></script>

@@ -14,7 +14,7 @@
 
 .navbar{
     display: flex;
-    background-color: #f8f8f8; 
+    background-color: #F9F7F7; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     position: fixed;
     top: 0;
@@ -31,7 +31,7 @@
 }
 
 .navbar-title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     display: flex;
     justify-content: flex-start;
@@ -40,8 +40,14 @@
     padding: 10px;
 }
 
+.navbar-logo{
+    position: relative;
+    left: 3%;
+}
+
 .navbar-element{
     display: flex;
+    align-items: center;
     padding: 10px;
 }
 
@@ -59,14 +65,15 @@
 .navbar-element a{
     display: block;
     text-decoration: none;
+    color: #3F72AF;
     padding: 1rem;
 }
 
-.active,
+.navbar-element .active,
 .nav-link:hover
 {
-    background-color: black;
-    color: white;
+    background-color: #112D4E;
+    color: #DBE2EF;
     transition: 0.1s ease-in-out;
     border-radius: 3px;
 }
@@ -78,21 +85,27 @@
     flex-direction: column;
 }
 
+.title{
+    font-size: 3.5rem;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
 .search{
    margin-top: 120px;
+   font-size: 1.2rem;
 }
 
 .city-aqi-container{
-
-    height: 30px;
+    height: 50px;
 }
 
 .aqi-result{
     margin: 10px;
     padding: 10px;
-    line-height: 10%;
     font-size: 1.2rem;
     font-weight: 400;
+    
 }
 
 .map-content{
@@ -106,16 +119,143 @@
 .map{
     width: 95vw;
     height: 78vh;
-    border: 5px black solid;
+    border: 5px #DBE2EF solid;
     margin-top: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  }
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 25px;
+}
+
+th{
+    display: table-cell;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+    height: 30px;
+    font-size: 1.5rem;
+}
+
+.th-1{
+    background-color: bisque;
+}
+
+.th-2{
+    background-color: beige;
+}
+
+td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 15px;
+    line-height: 50px;
+}
+
+tr td ul{
+    padding-left: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.solution-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100%;
+}
+
+.measure1, .measure2, .measure3{
+    display: flex;
+    flex-direction:row;
+    margin: 10px;
+    height: 600px;
+}
+
+.picture1{
+    justify-self: flex-start;
+    background-image: url("https://images.pexels.com/photos/3671139/pexels-photo-3671139.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 100%;
+}
+
+.solution1{
+    display: flex;
+    flex-direction: column  ;
+    width: 100%;
+}
+
+.picture2{
+    justify-self: flex-start;
+    background-image: url("https://images.pexels.com/photos/414928/pexels-photo-414928.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 100%;
+}
+
+.solution2{
+    display: flex;
+    flex-direction: column  ;
+    width: 100%;
+}
+
+.picture3{
+    justify-self: flex-start;
+    background-image: url("https://images.pexels.com/photos/3641377/pexels-photo-3641377.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 100%;
+}
+
+.solution3{
+    display: flex;
+    flex-direction: column  ;
+    width: 100%;
+}
+
+.solution-header{
+
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: 1000;
+    position: relative;
+    top: 10%;
+    left: 4%;
+}
+
+.solution-header-2{
+
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: 1000;
+    position: relative;
+    top: 10%;
+    left: 33%;
+}
+
+.solution-text{
+    position: relative;
+    padding: 80px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: justify;
+}
 
 
 .footer{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 70px;
+    bottom: 0;
 }
 
 .text{
@@ -125,3 +265,9 @@
     padding: 5px;
 }
 
+@media screen and (width < 768px) {
+    .navbar-element{
+        display: none;
+    }
+    
+}

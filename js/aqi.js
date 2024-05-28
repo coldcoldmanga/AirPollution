@@ -17,10 +17,11 @@ async function fetchAQI() {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
+
             const data = await response.json();
             displayResult(data);
         } catch (error) {
-            console.error('Error fetching AQI:', error);
+            console.log(error);
             document.getElementById('city-aqi-container').innerText = 'Error fetching AQI. Please try again.';
         }
     }
@@ -35,10 +36,12 @@ function displayResult(data){
 
     if(data.status === 'ok')
     {
+
         const city = data.data.city.name;
         const aqi = data.data.aqi;
         const info = data.data.city.url;
-        aqiContainer.innerHTML = `The AQI for ${city} is ${aqi}. For more information: ${info}`;
+        
+        aqiContainer.innerHTML = `<p>The AQI for ${city} is ${aqi}. For more information: <a href=${info} target=_blank>${info}</a></p><br>`;
 
     }
     else
