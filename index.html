@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/card-flip.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar">
@@ -50,7 +51,7 @@
         <section id="AQI">
             <div class="container">
                     <h1 class="title">What is AQI</h1>
-                    <p class="text" style="margin-top: 20px;">The Air Quality Index (AQI) is a measurement of air pollutant concentrations in ambient air pollution and their associated health risks.</p>
+                    <p class="text" style="margin-top: 20px;">The Air Quality Index (AQI) is a measurement of air pollutant concentrations in ambient air pollution and their associated health risks. The AQI typically ranges from 0 to 500, with lower values indicating better air quality and higher values signaling increased pollution levels.</p>
 
                     <div class="content">
                         <div class="row">
@@ -207,21 +208,22 @@
 
                             <div class="front">
                                 <div class="card-content">
-                                    <dv class="img">
+                                    <div class="img">
                                         <img src="img/industry.svg" alt="" srcset="" width="70%">
-                                    </dv>
+                                    </div>
+                                    <div class="text">Industries</div>
                                 </div>
                             </div>
 
                             <div class="back">
-                                <div class="card-content">
+                                <div class="card-content-flip">
                                     Industry includes pollution from facilities such as manufacturing factories, mines, and oil refineries as well as coal power plants and boilers for heat and power generation.
                                 </div>
 
                             </div>
 
                             <div class="card-footer front">
-                                Industries
+                                
                             </div>
                         </div>
 
@@ -232,20 +234,21 @@
 
                             <div class="front">
                                 <div class="card-content">
-                                    <dv class="img">
+                                    <div class="img">
                                         <img src="img/building.svg" alt="" srcset="" width="70%">
-                                    </dv>
+                                    </div>
+                                    <div class="text">Development Activities</div>
                                 </div>
                             </div>
 
                             <div class="back">
-                                <div class="card-content">
+                                <div class="card-content-flip">
                                     Development activities such as construction, industrial operations, and deforestation emit pollutants like particulate matter and gases, exacerbating air pollution.                                </div>
 
                             </div>
 
                             <div class="card-footer front">
-                                Development Activities
+                                
                             </div>
                         </div>
 
@@ -259,21 +262,22 @@
 
                             <div class="front">
                                 <div class="card-content">
-                                    <dv class="img">
+                                    <div class="img">
                                         <img src="img/car.svg" alt="" srcset="" width="70%">
-                                    </dv>
+                                    </div>
+                                    <div class="text">Transportation</div>
                                 </div>
                             </div>
 
                             <div class="back">
-                                <div class="card-content">
+                                <div class="card-content-flip">
                                     Air pollution from transport refers primarily to fuel combustion in motor vehicles, such as in cars, trucks, trains, planes, and ships. Transport emissions are a major contributor to elevated levels of fine particulate matter (PM2.5), ozone, and nitrogen dioxide (NO2).
                                 </div>
 
                             </div>
 
                             <div class="card-footer front">
-                                Transportation
+                               
                             </div>
                         </div>
 
@@ -287,16 +291,17 @@
                                     <div class="img">
                                         <img src="img/fire.svg" alt="" srcset="" width="70%" style="color: black;">
                                     </div>
+                                    <div class="text">Wild Fires and Open Burning</div>
                                 </div>
                             </div>
 
                             <div class="back">
-                                <div class="card-content">
+                                <div class="card-content-flip">
                                     The burning of plant matter emits large amounts of pollutants, as does burning other solid fuels like coal. Burning organic material emits particulate matter (PM), nitrogen oxides (NOx), carbon monoxide (CO), sulfur dioxide (SO2), lead, mercury, and other hazardous air pollutants (HAPs). These fires may occur organically, accidentally, or intentionally. </div>
                             </div>
 
                             <div class="card-footer front">
-                                Wild Fires and Open Burning
+                                
                             </div>
                         </div>
 
@@ -420,9 +425,9 @@
             <div class="footer">©2024 Air Pollution MY</div>
         </footer>
     
-<script  type="text/javascript" src="js/aqi.js"  charset="utf-8"></script>
-<script type="text/javascript" src="js/map.js"></script>
-<script src="js/scrollspy.js"></script>
+<script  type="text/javascript" src="js/aqi.js"  charset="utf-8" defer></script>
+<script type="text/javascript" src="js/map.js" defer></script>
+<script src="js/scrollspy.js" defer></script>
 <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AsZWQwvHvUQDJ3Kji7UdRWYhc9rZjsfORkO_98hOYr4ghY4dSNENKkGtpS-abnz9' async defer></script>
     
 </body>

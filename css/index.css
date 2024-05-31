@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: Poppins;
+
 }
 
 .container{
@@ -118,7 +120,7 @@
 
 .map{
     width: 95vw;
-    height: 78vh;
+    height: 75vh;
     border: 5px #DBE2EF solid;
     margin-top: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -128,7 +130,7 @@ table{
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
-    margin: 25px;
+    margin: 25px 25px 25px 0px;
 }
 
 th{
@@ -245,7 +247,7 @@ tr td ul{
 .solution-text{
     position: relative;
     padding: 80px;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 500;
     text-align: justify;
 }
@@ -262,8 +264,14 @@ tr td ul{
     font-weight: 500;
     font-size: 1.5rem;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
 }
+
+#Cause, #Solution{
+    background-color:#DBE2EF;
+}
+
+
 
 @media screen and (width < 768px) {
     .navbar-element{

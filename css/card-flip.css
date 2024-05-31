@@ -12,6 +12,17 @@
     backface-visibility: hidden;
 }
 
+.card-content-flip{
+    width: 100%;
+    height: 75%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    
+}
+
 .front{
     font-size: 2rem;
 }
@@ -26,6 +37,6 @@
     padding: 5px;
     font-weight: 600;
     font-size: 1.2rem;
-    top: 10%;
+    top: 0;
     height: 100%;
 }

@@ -41,7 +41,7 @@ function displayResult(data){
         const aqi = data.data.aqi;
         const info = data.data.city.url;
         
-        aqiContainer.innerHTML = `<p>The AQI for ${city} is ${aqi}. For more information: <a href=${info} target=_blank>${info}</a></p><br>`;
+        aqiContainer.innerHTML = `<p>The AQI for ${city} is <strong>${aqi}</strong>. For more information: <a href=${info} target=_blank>${info}</a></p><br>`;
 
     }
     else
