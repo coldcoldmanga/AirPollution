@@ -1,13 +1,11 @@
 "use strict";
 
-//for geocoding
 var map;
-let searchManager;
 
 function GetMap()
     {
         map  =  new  Microsoft.Maps.Map(document.getElementById('map'),  {  
-            center:  new  Microsoft.Maps.Location(4.2105, 101.9758),  
+            center:  new  Microsoft.Maps.Location(4.2105, 101.9758), //malaysia latitude,longtitude 
             zoom:  6,  
       });  
 
@@ -23,33 +21,3 @@ function GetMap()
       map.layers.insert(waqiTilelayer);
 
     }
-
-// function geocodeQuery(query){
-//     if(!searchManager)
-//     {
-//         Microsoft.Maps.loadModule("Microsoft.Maps.Search", function(){
-//             searchManager = new Microsoft.Maps.Search.SearchManager(map);
-//             geocodeQuery(query);
-//         });
-//     }
-//     else
-//     {
-//         let searchRequest = {
-//             where: query,
-//             callback: function(r){
-//                 if(r && r.results && r.results.length > 0)
-//                     {
-//                         var pin = new Microsoft.Maps.PushPin(r.results[0].location);
-//                         map.entities.push(pin);
-
-//                         map.setView({bounds: r.results[0].bestView});
-//                     };
-//             },
-//             errorCallback: function(e)
-//             {
-//                 alert("No results found");
-//             }
-//         };
-//         searchManager.geocode(searchRequest);
-//     }
-// }

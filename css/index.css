@@ -126,11 +126,13 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  }
 
+
 table{
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
-    margin: 25px 25px 25px 0px;
+    height: 100%;
+    margin: 10px;
 }
 
 th{
@@ -167,7 +169,7 @@ tr td ul{
 .solution-content{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     height:100%;
 }
 
@@ -186,6 +188,7 @@ tr td ul{
     background-repeat: no-repeat;
     width: 40%;
     height: 100%;
+    border: 3px solid black;
 }
 
 .solution1{
@@ -199,8 +202,10 @@ tr td ul{
     background-image: url("https://images.pexels.com/photos/414928/pexels-photo-414928.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 40%;
     height: 100%;
+    border: 3px solid black;
 }
 
 .solution2{
@@ -214,6 +219,8 @@ tr td ul{
     background-image: url("https://images.pexels.com/photos/3641377/pexels-photo-3641377.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid black;
     width: 40%;
     height: 100%;
 }
@@ -241,7 +248,7 @@ tr td ul{
     font-weight: 1000;
     position: relative;
     top: 10%;
-    left: 33%;
+    left: 15%;
 }
 
 .solution-text{
@@ -258,6 +265,7 @@ tr td ul{
     justify-content: center;
     position: relative;
     bottom: 0;
+    background-color: #DBE2EF;
 }
 
 .text{

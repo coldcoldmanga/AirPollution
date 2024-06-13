@@ -46,7 +46,7 @@ function displayResult(data){
     }
     else
     {
-        aqiContainer.innerHTML = 'Could not fetch AQI for the specific city';
+        aqiContainer.innerHTML = `Sorry, but we do not have AQI information for ${searchInput.value}`;
     }
 }
 
