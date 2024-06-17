@@ -19,7 +19,9 @@ async function fetchAQI() {
             }
 
             const data = await response.json();
+            geocode();
             displayResult(data);
+            
         } catch (error) {
             console.log(error);
             document.getElementById('city-aqi-container').innerText = 'Error fetching AQI. Please try again.';
@@ -61,3 +63,23 @@ function debounce(func, wait) {
         timeout = setTimeout(later, wait);
     };
 }
+
+function geocode(){
+    Microsoft.Maps.loadModule('Microsoft.Maps.Search', function () {
+        var searchManager = new Microsoft.Maps.Search.SearchManager(map);
+        const city = searchInput.value;
+        var requestOptions = {
+            bounds: map.getBounds(),
+            where: city,
+            callback: function (answer, userData) {
+                map.setView({ bounds: answer.results[0].bestView });
+                map.entities.push(new Microsoft.Maps.Pushpin(answer.results[0].location));
+               
+            }
+        };
+        
+        searchManager.geocode(requestOptions);
+        
+    });
+}
+
