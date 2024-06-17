@@ -71,7 +71,7 @@ function geocode(){
         var requestOptions = {
             bounds: map.getBounds(),
             where: city,
-            callback: function (answer, userData) {
+            callback: function (answer) {
                 map.setView({ bounds: answer.results[0].bestView });
                 map.entities.push(new Microsoft.Maps.Pushpin(answer.results[0].location));
                
