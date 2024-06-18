@@ -30,6 +30,22 @@
         <section id="Map">
             <div class="main">
                 <div class="map-content">
+                    <div class="country-list">
+                        <div class="country-row">
+                            <button class="country" onclick="selectCountry('Brunei Darussalam',4.5353,114.7277)">Brunei Darussalam <span><img src="img/brunei-flag.svg" alt="brunei-flag" width="30px"></span></button>
+                            <button class="country" onclick="selectCountry('Cambodia',12.5657,104.9910)">Cambodia<span><img src="img/cambodia.svg" alt="cambodia" width="30px"></span></button>
+                            <button class="country" onclick="selectCountry('Indonesia',0.7893, 113.9213)">Indonesia<span><img src="img/indon-flag.svg" alt="indonesia-flag" width="30px"></span></button>
+                            <button class="country" onclick="selectCountry('Laos',19.8563,102.4955)">Laos<span><img src="img/laos-flag.svg" alt="laos-flag" width="30px"></span></button>
+                            <button class="country selected" onclick="selectCountry('Malaysia',4.2105,101.9758)">Malaysia<span><img src="img/malaysia-flag.svg" alt="malaysia-flag" width="30px"></span></button>
+                        </div>
+                        <div class="country-row">
+                            <button class="country" onclick="selectCountry('Myanmar', 21.9162,95.9560)">Myanmar<span><img src="img/myanmar-flag.svg" alt="brunei-flag" width="30px"></span></button>
+                            <button class="country" onclick="selectCountry('Philippines',12.8797,121.7740)">Philippines<span><img src="img/philippines-flag.svg" alt="brunei-flag" width="30px"></span></button>
+                            <button class="country" onclick="selectCountry('Singapore',1.3521, 103.8198)">Singapore<span><img src="img/singapore-flag.svg" alt="brunei-flag" width="30px"></span></button>
+                            <button class="country" onclick="selectCountry('Thailand',15.8700,100.9925)">Thailand<span><img src="img/thailand-flag.svg" alt="brunei-flag" width="30px"></span></button>
+                            <button class="country" onclick="selectCountry('Vietnam',14.0583, 108.2772)">Vietnam<span><img src="img/vietnam-flag.svg" alt="brunei-flag" width="30px"></span></button>
+                        </div>
+                    </div>
                     <div class="search">
                         <label for="searchInput">Enter City:</label>
                         <input type="text" placeholder="Enter the city you want" class="searchInput" id="searchInput" style="padding: 5px;">
@@ -426,7 +442,7 @@
         </footer>
     
 <script  type="text/javascript" src="js/aqi.js"  charset="utf-8" defer></script>
-<!-- <script type="text/javascript" src="js/map.js" defer></script> -->
+<script type="text/javascript" src="js/map.js" defer></script>
 <script src="js/scrollspy.js" defer></script>
 <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AsZWQwvHvUQDJ3Kji7UdRWYhc9rZjsfORkO_98hOYr4ghY4dSNENKkGtpS-abnz9' async defer></script>
     

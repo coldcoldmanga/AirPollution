@@ -2,10 +2,12 @@
 
 var map;
 
+
+
 function GetMap()
     {
         map  =  new  Microsoft.Maps.Map(document.getElementById('map'),  {  
-            center:  new  Microsoft.Maps.Location(4.2105, 101.9758), //malaysia latitude,longtitude 
+            center:  new  Microsoft.Maps.Location(4.2105, 101.9758), //by default, malaysia latitude,longtitude 
             zoom:  6,  
       });
       
@@ -21,6 +23,17 @@ function GetMap()
       var  waqiTilelayer  =  new  Microsoft.Maps.TileLayer({  mercator:  waqiTileSource  });  
       map.layers.insert(waqiTilelayer);
 
-      
+    }
 
+    function selectCountry(country, lat, long)
+    {
+        document.querySelector('.country.selected').classList.remove('selected');
+        const buttons = document.querySelectorAll('.country');
+            buttons.forEach(button => {
+                if (button.textContent.trim() === country) {
+                    button.classList.add('selected');
+                }
+            });
+
+        map.setView({ center: new Microsoft.Maps.Location(lat, long), zoom: 6 });
     }
